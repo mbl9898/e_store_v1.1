@@ -4,7 +4,7 @@ import { DBProductsContext, DBCategoriesContext } from "./contexts";
 import DotLoader from "react-spinners/DotLoader";
 
 // store Context in Local or browser storage temporarily
-import Axios from "axios";
+import axios from "axios";
 // interfaces
 import { DBCategories, DBProducts } from "./interfaces";
 // Pages
@@ -42,7 +42,7 @@ const App: React.FC = () => {
 
   const getProducts: () => void = async () => {
     try {
-      const res = await Axios.get("http://localhost:3001/api/products");
+      const res = await axios.get("http://localhost:3001/api/products");
       setDBProducts(res.data);
     } catch (err) {
       console.log(err);
@@ -51,7 +51,7 @@ const App: React.FC = () => {
 
   const getCategories: () => void = async () => {
     try {
-      const res = await Axios.get("http://localhost:3001/api/categories");
+      const res = await axios.get("http://localhost:3001/api/categories");
       setDBCategories(res.data);
       // console.log(res.data);
       setIsHomePageLoading(false);
