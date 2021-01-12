@@ -1,4 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, {
+  // useState,
+  useContext,
+} from "react";
 import Carousel, { slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import { DBProductsContext } from "../contexts";
 import { DBProducts } from "../interfaces";

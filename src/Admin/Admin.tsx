@@ -9,7 +9,7 @@ import { DBProducts, DBCategories } from "../interfaces";
 const Admin: React.FC = () => {
   const [DBBrands, setDBBrands] = useState<[]>([]);
   const [DBCategories, setDBCategories] = useState<DBCategories[]>([]);
-  const [subCategories, setSubCategories] = useState<[]>([]);
+  // const [subCategories, setSubCategories] = useState<[]>([]);
   const [isOpen, setIsOpen] = useState<string>("");
   const [isDiscountPriceValid, setIsDiscountPriceValid] = useState<
     null | boolean

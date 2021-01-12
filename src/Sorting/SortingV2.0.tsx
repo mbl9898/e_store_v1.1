@@ -26,10 +26,10 @@ const Sorting: React.FC<Props> = ({
   setIsBodyOverflowYDisplay,
 }) => {
   const [currentCategory, setCurrentCategory] = useState<{} | any>({});
-  let brandIds: { brandIdsArr: [] } = {
-    brandIdsArr: [],
-  };
-  const [brandsForSort, setBrandsForSort] = useState<null>(null);
+  // let brandIds: { brandIdsArr: [] } = {
+  //   brandIdsArr: [],
+  // };
+  // const [brandsForSort, setBrandsForSort] = useState<null>(null);
   const DBCategories = useContext<[] | DBCategories[]>(DBCategoriesContext);
   const DBProducts: DBProducts[] = useContext<[] | DBProducts[]>(
     DBProductsContext
@@ -60,11 +60,14 @@ const Sorting: React.FC<Props> = ({
     }
   };
 
-  useEffect(() => {
-    if (DBCategories.length === 0) {
-      getCurrentCategory();
-    } else filterCurrentCategory();
-  }, []);
+  useEffect(
+    () => {
+      if (DBCategories.length === 0) {
+        getCurrentCategory();
+      } else filterCurrentCategory();
+    }
+    // , []
+  );
 
   return (
     <div className="sorting">
