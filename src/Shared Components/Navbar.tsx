@@ -97,7 +97,7 @@ const Navbar: React.FC<Props> = ({
         setIsCategoriesLevel2Open={setIsCategoriesLevel2Open}
       />
       <Link to="/">
-        <h3>E-Store-CICD-v2</h3>
+        <h3>E-Store</h3>
       </Link>
       <form className="form-inline">
         <input
