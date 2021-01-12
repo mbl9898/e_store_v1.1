@@ -1,0 +1,139 @@
+// Style Variables Import
+@import "../styles/scss/variables.scss";
+
+.sorting {
+  .categoryPath {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 3%;
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      li {
+        padding: 0.3rem 0;
+        font-size: 12px;
+      }
+      svg {
+        align-self: center;
+      }
+    }
+    h3 {
+      margin: 0;
+    }
+  }
+  .sortingPane {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 0.5rem;
+
+    .filtersPane {
+      display: flex;
+      flex-direction: column;
+      width: 17%;
+      border-right: 1px solid #ddd;
+      padding: 0.4%;
+      // height: calc(100vh - 127px);
+      // overflow-y: auto;
+      .category {
+        display: flex;
+        flex-direction: column;
+      }
+      h5 {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      h6 {
+        margin-left: 0.5rem;
+      }
+      a {
+        color: black;
+        margin-left: 1rem;
+      }
+
+      input {
+        margin: 0 0.3rem 0 0.5rem;
+      }
+      label {
+        font-size: 14px;
+      }
+    }
+    .productsDisplay {
+      display: flex;
+      flex-direction: column;
+      width: 83%;
+      padding: 0.4%;
+
+      .saleBanner {
+        display: flex;
+        justify-content: center;
+        background-color: #001e74;
+        .saleBannerInner {
+          background-image: url(https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-53461-scpl-ocds-201112-199072.jpg);
+          background-repeat: no-repeat;
+          width: 70rem;
+          display: flex;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          height: 13rem;
+        }
+        .saleBannerContent {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          .saleBannerContentInner {
+            padding-right: 2rem;
+            h3 {
+              color: white;
+              background-color: #ee262d;
+              display: inline-block;
+              padding: 0.2rem;
+              font-size: 19px;
+              margin-bottom: 0.5rem;
+            }
+            h2 {
+              color: white;
+              font-size: 25px;
+            }
+          }
+          .bannerHeading {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem 1rem 0 0;
+          }
+          h1 {
+            color: $white;
+            font-weight: 900;
+          }
+          .saleH1 {
+            padding-left: 0.4rem;
+            color: $secondaryColor;
+          }
+        }
+        .bannerShopNow {
+          align-self: center;
+          padding: 1rem;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          p {
+            color: $white;
+            margin: 0.3rem 0;
+            font-size: 11px;
+          }
+          button {
+            background-color: $secondaryColor;
+            border-radius: 3px;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            outline: unset;
+          }
+        }
+      }
+    }
+  }
+}

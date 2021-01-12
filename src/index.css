@@ -1,0 +1,8 @@
+/* Compressed SCSS Import */
+@import "./scss/variables.css";
+@import "./Home/Home.css";
+@import "./Admin/Admin.css";
+@import "./Product/Product.css";
+@import "./Shared Components/SharedComponents.css";
+@import "./Sorting/Sorting.css";
+@import "./scss/style.css";
